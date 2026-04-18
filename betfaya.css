@@ -1,0 +1,51 @@
+/* --- Global Navigation Styles --- */
+[data-mj="header-nav"] {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+[data-mj="header-nav-item"] a {
+  color: #fff !important;
+}
+
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] a.active-link,
+[data-mj="header-nav-item"] a[aria-current="page"] {
+  color: rgb(73, 73, 73) !important;
+}
+
+/* --- Shared Logo Image Logic --- */
+[data-mj="logo"] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; 
+}
+
+/* --- Mobile Logo (Screens up to 1024px) --- */
+@media (max-width: 1024px) {
+  [data-mj="logo"] {
+    width: 88px !important;
+    height: 42px !important;
+    max-width: 88px !important;
+    max-height: 42px !important;
+    min-width: 88px !important;
+    min-height: 42px !important;
+    margin-top: -5px !important; /* Moves it up on mobile */
+    display: flex !important;
+    align-items: center !important;
+  }
+}
+
+/* --- Desktop Logo (Screens wider than 1024px) --- */
+@media (min-width: 1025px) {
+  [data-mj="logo"] {
+    width: 160px !important;
+    height: 80px !important;
+    max-width: 160px !important;
+    max-height: 80px !important;
+    min-width: 160px !important;
+    min-height: 80px !important;
+    margin-top: 0px !important; /* Center it for desktop */
+    display: flex !important;
+    align-items: center !important;
+  }
+}
