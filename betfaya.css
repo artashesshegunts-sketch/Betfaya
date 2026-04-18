@@ -1,3 +1,4 @@
+/* --- Navigation Styles --- */
 [data-mj="header-nav"] {
   background-color: rgb(255, 0, 0) !important;
 }
@@ -12,7 +13,6 @@
   color: rgb(73, 73, 73) !important;
 }
 
-/* --- New Mobile Logo Size Logic --- */
 [data-mj="logo"] {
   width: 88px !important;
   height: 42px !important;
@@ -20,6 +20,12 @@
   max-height: 42px !important;
   min-width: 88px !important;
   min-height: 42px !important;
+  
+  margin-top: -5px !important; 
+  
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
 }
 
 [data-mj="logo"] img {
