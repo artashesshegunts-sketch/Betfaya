@@ -21,7 +21,6 @@
     width: 160px !important;  /* Your preferred Desktop width */
     height: 80px !important;  /* Your preferred Desktop height */
     min-width: 160px !important;
-    min-height: 80px !important;
     margin-top: 0 !important;   /* Reset alignment for desktop */
     display: inline-flex !important;
     align-items: center !important;
