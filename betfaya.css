@@ -1,0 +1,56 @@
+/* --- Global Navigation Styles --- */
+[data-mj="header-nav"] {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+[data-mj="header-nav-item"] a {
+  color: #fff !important;
+}
+
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] a.active-link,
+[data-mj="header-nav-item"] a[aria-current="page"] {
+  color: rgb(73, 73, 73) !important;
+}
+
+/* --- LOGO LOGIC --- */
+
+/* 1. Reset the parent container so it doesn't squash the logo */
+div:has(> [data-mj="logo"]) {
+  height: auto !important;
+  max-height: none !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+/* 2. Mobile Logo Settings */
+@media (max-width: 1024px) {
+  [data-mj="logo"] {
+    width: 88px !important;
+    height: 42px !important;
+    min-width: 88px !important;
+    min-height: 42px !important;
+    margin-top: -8px !important; /* Adjusted to move it higher */
+    display: flex !important;
+  }
+}
+
+/* 3. Desktop Logo Settings (FORCED BIG) */
+@media (min-width: 1025px) {
+  [data-mj="logo"] {
+    width: 200px !important; /* Making it very large to test */
+    height: 60px !important;
+    min-width: 200px !important;
+    min-height: 60px !important;
+    margin-top: 0 !important;
+    display: flex !important;
+  }
+}
+
+/* 4. Ensure the Image fills the new sizes */
+[data-mj="logo"] img {
+  width: 100% !important;
+  height: 100% !important;
+  max-height: none !important;
+  object-fit: contain !important;
+}
