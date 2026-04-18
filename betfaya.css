@@ -1,4 +1,3 @@
-/* --- Navigation Styles --- */
 [data-mj="header-nav"] {
   background-color: rgb(255, 0, 0) !important;
 }
@@ -13,6 +12,7 @@
   color: rgb(73, 73, 73) !important;
 }
 
+/* --- Mobile Logo  --- */
 [data-mj="logo"] {
   width: 88px !important;
   height: 42px !important;
@@ -20,14 +20,25 @@
   max-height: 42px !important;
   min-width: 88px !important;
   min-height: 42px !important;
-  
   margin-top: -5px !important; 
-  
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
 }
 
+/* --- Desktop Logo --- */
+@media (min-width: 1025px) {
+  [data-mj="logo"] {
+    width: 150px !important; 
+    height: 50px !important; 
+    max-width: 150px !important;
+    max-height: 50px !important;
+    min-width: 150px !important;
+    min-height: 50px !important;
+    margin-top: 0px !important; 
+  }
+}
+
+/* Ensure image fills the container regardless of size */
 [data-mj="logo"] img {
   width: 100% !important;
   height: 100% !important;
