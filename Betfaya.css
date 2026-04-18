@@ -14,18 +14,6 @@
 }
 
 /* --- LOGO SETTINGS --- */
-
-/* 1. Mobile Settings (Small Screens) */
-@media screen and (max-width: 1024px) {
-  [data-mj="logo"] {
-    width: 88px !important;
-    height: 42px !important;
-    min-width: 88px !important;
-    min-height: 42px !important;
-    margin-top: -6px !important; /* Adjust this to move it up/down on mobile */
-    display: inline-flex !important;
-    align-items: center !important;
-  }
 }
 
 /* 2. Desktop Settings (Large Screens) */
@@ -39,6 +27,19 @@
     display: inline-flex !important;
     align-items: center !important;
   }
+
+/* 1. Mobile Settings (Small Screens) */
+@media screen and (max-width: 1024px) {
+  [data-mj="logo"] {
+    width: 88px !important;
+    height: 42px !important;
+    min-width: 88px !important;
+    min-height: 42px !important;
+    margin-top: -6px !important; /* Adjust this to move it up/down on mobile */
+    display: inline-flex !important;
+    align-items: center !important;
+  }
+
 }
 
 /* 3. Image behavior for both */
