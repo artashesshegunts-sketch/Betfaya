@@ -38,6 +38,9 @@
     align-items: center !important;
   }
 
+  [data-mj="logo"] > img {
+    max-width: 120px;
+  }
 }
 
 /* 3. Image behavior for both */
