@@ -14,7 +14,6 @@
 }
 
 /* --- LOGO SETTINGS --- */
-}
 
 /* 2. Desktop Settings (Large Screens) */
 @media screen and (min-width: 1025px) {
@@ -27,7 +26,7 @@
     display: inline-flex !important;
     align-items: center !important;
   }
-
+}
 /* 1. Mobile Settings (Small Screens) */
 @media screen and (max-width: 1024px) {
   [data-mj="logo"] {
