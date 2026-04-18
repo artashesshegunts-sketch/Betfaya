@@ -1,0 +1,29 @@
+[data-mj="header-nav"] {
+  background-color: rgb(255, 0, 0) !important;
+}
+
+[data-mj="header-nav-item"] a {
+  color: #fff !important;
+}
+
+[data-mj="header-nav-item"] .active-link,
+[data-mj="header-nav-item"] a.active-link,
+[data-mj="header-nav-item"] a[aria-current="page"] {
+  color: rgb(73, 73, 73) !important;
+}
+
+/* --- New Mobile Logo Size Logic --- */
+[data-mj="logo"] {
+  width: 88px !important;
+  height: 42px !important;
+  max-width: 88px !important;
+  max-height: 42px !important;
+  min-width: 88px !important;
+  min-height: 42px !important;
+}
+
+[data-mj="logo"] img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: contain !important; 
+}
