@@ -28,7 +28,7 @@
 }
 /* 1. Mobile Settings (Small Screens) */
 @media screen and (max-width: 1024px) {
-  [data-mj="logo"] {
+  a[data-mj="logo"] {
     width: 88px !important;
     height: 42px !important;
     min-width: 88px !important;
