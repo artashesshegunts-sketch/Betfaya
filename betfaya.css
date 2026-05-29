@@ -15,17 +15,6 @@
 
 /* --- LOGO SETTINGS --- */
 
-/* 2. Desktop Settings (Large Screens) */
-@media screen and (min-width: 1025px) {
-  [data-mj="logo"] {
-    width: 160px !important;  /* Your preferred Desktop width */
-    height: 80px !important;  /* Your preferred Desktop height */
-    min-width: 160px !important;
-    margin-top: 0 !important;   /* Reset alignment for desktop */
-    display: inline-flex !important;
-    align-items: center !important;
-  }
-}
 /* 1. Mobile Settings (Small Screens) */
 @media screen and (max-width: 1024px) {
   [data-mj="logo"] {
@@ -39,7 +28,19 @@
   }
 
   [data-mj="logo"] > img {
-    max-width: 120px;
+    max-width: 120px !important;
+  }
+}
+
+/* 2. Desktop Settings (Large Screens) */
+@media screen and (min-width: 1025px) {
+  [data-mj="logo"] {
+    width: 160px !important;  /* Your preferred Desktop width */
+    height: 80px !important;  /* Your preferred Desktop height */
+    min-width: 160px !important;
+    margin-top: 0 !important;   /* Reset alignment for desktop */
+    display: inline-flex !important;
+    align-items: center !important;
   }
 }
 
@@ -48,4 +49,9 @@
   width: 100% !important;
   height: 100% !important;
   object-fit: contain !important;
+}
+
+/* --- WIDGET SETTINGS --- */
+[data-mj="widget-top-providers-item"] {
+  background-color: #918484 !important;
 }
